@@ -16,6 +16,7 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 
+
 const riksDagRequest =  require('./riksdagsrequest.js');
 riksDagRequest.getRiksdagsledamot().then(json => {
   for (var i = 0; i < 349; i++) {
